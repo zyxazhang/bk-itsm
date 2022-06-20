@@ -94,7 +94,7 @@
                         <bk-select :disabled="!hookVarList[pipeline.id]" style="width: 200px;"
                             ext-cls="select-custom"
                             searchable
-                            :value="hookSelectList[pipeline.id].replace(/^\$\{/, '').replace(/\}$/, '') || ''"
+                            :value="hookSelectList[pipeline.id]"
                             @selected="changeConstant($event, pipeline)">
                             <bk-option v-for="option in stateList"
                                 :key="option.id"
