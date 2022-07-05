@@ -260,10 +260,6 @@
           this.$store.commit('common/setSystemPermission', pagePermission);
         });
       },
-      // 获取项目详情
-      // loadProjectInfo () {
-      //     return this.$store.dispatch('project/getProjectInfo')
-      // },
       // 获取权限树
       getPermissionMeta() {
         return this.$store.dispatch('common/getPermissionMeta');
